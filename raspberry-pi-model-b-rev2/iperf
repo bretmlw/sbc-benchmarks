@@ -11,5 +11,5 @@
 [  5]   9.10-10.09  sec  6.25 MBytes  53.0 Mbits/sec    0    133 KBytes
 - - - - - - - - - - - - - - - - - - - - - - - - -
 [ ID] Interval           Transfer     Bitrate         Retr
-[  5]   0.00-10.09  sec  62.5 MBytes  51.9 Mbits/sec    0             sender
-[  5]   0.00-11.30  sec  62.5 MBytes  46.4 Mbits/sec                  receiver
+[  5]   0.00-10.09  sec  62.5 MBytes  51.9 Mbits/sec    0            sender
+[  5]   0.00-11.30  sec  62.5 MBytes  46.4 Mbits/sec                 receiver
