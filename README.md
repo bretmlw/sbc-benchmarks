@@ -7,4 +7,4 @@ If you have a specific test or benchmark you'd like me to run and provide result
 
 (In cases where I've benched an overclocked board, I've added `-overclock-XXXX` to the end of the results file and included full overclocking options at the top of that results file)
 
-All iperf3 results are tested with default settings to a server on a local network confirmed to be able to push 1Gbit. On devices where both ethernet and WiFi are available, separate results (iperf & iperf-wifi) will be tested.
+All iperf3 results are tested with default settings to a server on a local network confirmed to be able to push 1Gbit. On devices where both ethernet and WiFi are available, separate results (iperf & iperf-wifi) will be tested. All WiFi tests are done from a distance of 1m with line of sight to the router.
