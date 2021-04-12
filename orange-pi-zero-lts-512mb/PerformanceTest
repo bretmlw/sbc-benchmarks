@@ -1,0 +1,21 @@
+                          PassMark PerformanceTest Linux
+
+Xunlong Orange Pi Zero
+Cortex-A7 (armv7l)
+4 cores @ 1368 MHz  |  0 MiB RAM
+Number of Processes: 4  |  Test Iterations: 3  |  Test Duration: Short
+
+                                                       Iteration: 3/3
+Tests                              Status              Result
+Integer Math                       Complete            1910.99 MOps/s
+Floating Point Math                Complete            729.53 MOps/s
+Prime Numbers                      Complete            0.58 Million Primes/s
+Sorting                            Complete            864.10 Thousand Strings/s
+Encryption                         Complete            108.19 MB/s
+Compression                        Complete            7.91 MB/s
+CPU Single Threaded                Complete            260.81 MOps/s
+Physics                            Complete            31.00 Frames/s
+Extended Instructions (NEON)       Complete            132.66 Million Matrices/s
+Cross-platform Mark                Complete            498.00
+
+CPU Mark                           Complete            337.62
