@@ -1,0 +1,51 @@
+Raspberry Pi Benchmark Test
+Author: AikonCWD
+Version: 3.0
+
+temp=37.9'C
+arm_freq=1000
+arm_freq_min=700
+core_freq=400
+sdram_freq=450
+gpu_freq=300
+sd_clock=50.000 MHz
+
+Skipping speed test
+
+Running CPU test...
+ total time: 87.1504s
+ min: 8.52ms
+ avg: 34.84ms
+ max: 168.37ms
+temp=42.2'C
+
+Running THREADS test...
+ total time: 271.5605s
+ min: 73.01ms
+ avg: 108.61ms
+ max: 331.24ms
+temp=44.4'C
+
+Running MEMORY test...
+Operations performed: 3145728 (126970.26 ops/sec)
+3072.00 MB transferred (123.99 MB/sec)
+ total time: 24.7753s
+ min: 0.00ms
+ avg: 0.02ms
+ max: 141.78ms
+temp=45.5'C
+
+Running HDPARM test on /dev/mmcblk0p2...
+ HDIO_DRIVE_CMD(identify) failed: Invalid argument
+ Timing buffered disk reads:  74 MB in  3.01 seconds =  24.59 MB/sec
+temp=43.3'C
+
+Running DD WRITE test...
+536870912 bytes (537 MB, 512 MiB) copied, 35.3134 s, 15.2 MB/s
+temp=42.2'C
+
+Running DD READ test...
+536870912 bytes (537 MB, 512 MiB) copied, 23.3369 s, 23.0 MB/s
+temp=41.2'C
+
+AikonCWD's rpi-benchmark completed!
