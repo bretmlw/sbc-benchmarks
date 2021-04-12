@@ -1,0 +1,78 @@
+----------------------------------------------------------
+Integer	Processor
+integer performance	1410	1833
+----------------------------------------------------------
+Floating Point	Processor
+floating point performance	3088	
+----------------------------------------------------------
+Memory
+Memory performance	1035	
+Stream	Memory bandwidth performance	523	
+----------------------------------------------------------
+Result Information			
+Upload Date	April 12th 2021, 5:18pm		
+Views	1		
+----------------------------------------------------------
+System Information	
+----------------------------------------------------------
+N/A		
+Operating System	Linux 5.10.21-sunxi armv7l		
+Model	N/A		
+Processor	ARM Allwinner @ 1.37 GHz 1 processor, 4 threads		
+Processor ID	ARM implementer 65 architecture 7 variant 0 part 3079 revision 5		
+L1 Instruction Cache	0 KB		
+L1 Data Cache	0 KB		
+L2 Cache	0 KB		
+L3 Cache	0 KB		
+Motherboard	N/A		
+BIOS			
+Memory	491 MB		
+----------------------------------------------------------
+Integer Performance		
+----------------------------------------------------------
+Integer	1410		
+Blowfish single-core scalar	522 22.9 MB/sec		
+Blowfish multi-core scalar	2237 91.7 MB/sec		
+Text Compress single-core scalar	584 1.87 MB/sec		
+Text Compress multi-core scalar	1203 3.95 MB/sec		
+Text Decompress single-core scalar	340 1.40 MB/sec		
+Text Decompress multi-core scalar	711 2.83 MB/sec		
+Image Compress single-core scalar	706 5.84 Mpixels/sec		
+Image Compress multi-core scalar	2801 23.6 Mpixels/sec		
+Image Decompress single-core scalar	524 8.81 Mpixels/sec		
+Image Decompress multi-core scalar	2005 32.7 Mpixels/sec		
+Lua single-core scalar	1058 408 Knodes/sec		
+Lua multi-core scalar	4229 1.63 Mnodes/sec	
+----------------------------------------------------------
+Floating Point Performance	
+----------------------------------------------------------
+Floating Point	3088		
+Mandelbrot single-core scalar	495 330 Mflops		
+Mandelbrot multi-core scalar	2013 1.32 Gflops		
+Dot Product single-core scalar	1127 545 Mflops		
+Dot Product multi-core scalar	4778 2.18 Gflops		
+LU Decomposition single-core scalar	267 238 Mflops		
+LU Decomposition multi-core scalar	304 267 Mflops		
+Primality Test single-core scalar	1163 174 Mflops		
+Primality Test multi-core scalar	1299 241 Mflops		
+Sharpen Image single-core scalar	2224 5.19 Mpixels/sec		
+Sharpen Image multi-core scalar	8810 20.3 Mpixels/sec		
+Blur Image single-core scalar	2923 2.31 Mpixels/sec		
+Blur Image multi-core scalar	11654 9.16 Mpixels/sec	
+----------------------------------------------------------
+Memory Performance		
+----------------------------------------------------------
+Memory	1035		
+Read Sequential single-core scalar	697 875 MB/sec		
+Write Sequential single-core scalar	1844 1.26 GB/sec		
+Stdlib Allocate single-core scalar	574 2.14 Mallocs/sec		
+Stdlib Write single-core scalar	687 1.42 GB/sec		
+Stdlib Copy single-core scalar	1373 1.42 GB/sec	
+----------------------------------------------------------
+Stream Performance	
+----------------------------------------------------------
+Stream	523		
+Stream Copy single-core scalar	721 1011 MB/sec		
+Stream Scale single-core scalar	688 915 MB/sec		
+Stream Add single-core scalar	349 540 MB/sec		
+Stream Triad single-core scalar	335 475 MB/sec
