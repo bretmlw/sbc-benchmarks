@@ -1,0 +1,166 @@
+   #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #
+   #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #
+   #    #  # #  #  #    ##            #####   #####   # #  #  #       ######
+   #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #
+   #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #
+    ####   #    #  #  #    #          #####   ######  #    #   ####   #    #
+
+   Version 5.1.3                      Based on the Byte Magazine Unix Benchmark
+
+   Multi-CPU version                  Version 5 revisions by Ian Smith,
+                                      Sunnyvale, CA, USA
+   January 13, 2011                   johantheghost at yahoo period com
+
+------------------------------------------------------------------------------
+   Use directories for:
+      * File I/O tests (named fs***) = /home/pi/benchmarks/byte-unixbench/UnixBench/tmp
+      * Results                      = /home/pi/benchmarks/byte-unixbench/UnixBench/results
+------------------------------------------------------------------------------
+
+Use of uninitialized value in printf at ./Run line 1469.
+Use of uninitialized value in printf at ./Run line 1470.
+Use of uninitialized value in printf at ./Run line 1469.
+Use of uninitialized value in printf at ./Run line 1470.
+Use of uninitialized value in printf at ./Run line 1469.
+Use of uninitialized value in printf at ./Run line 1470.
+Use of uninitialized value in printf at ./Run line 1469.
+Use of uninitialized value in printf at ./Run line 1470.
+Use of uninitialized value in printf at ./Run line 1721.
+Use of uninitialized value in printf at ./Run line 1722.
+Use of uninitialized value in printf at ./Run line 1721.
+Use of uninitialized value in printf at ./Run line 1722.
+Use of uninitialized value in printf at ./Run line 1721.
+Use of uninitialized value in printf at ./Run line 1722.
+Use of uninitialized value in printf at ./Run line 1721.
+Use of uninitialized value in printf at ./Run line 1722.
+
+1 x Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+1 x Double-Precision Whetstone  1 2 3 4 5 6 7 8 9 10
+
+1 x Execl Throughput  1 2 3
+
+1 x File Copy 1024 bufsize 2000 maxblocks  1 2 3
+
+1 x File Copy 256 bufsize 500 maxblocks  1 2 3
+
+1 x File Copy 4096 bufsize 8000 maxblocks  1 2 3
+
+1 x Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+1 x Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+1 x Process Creation  1 2 3
+
+1 x System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+1 x Shell Scripts (1 concurrent)  1 2 3
+
+1 x Shell Scripts (8 concurrent)  1 2 3
+
+4 x Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+4 x Double-Precision Whetstone  1 2 3 4 5 6 7 8 9 10
+
+4 x Execl Throughput  1 2 3
+
+4 x File Copy 1024 bufsize 2000 maxblocks  1 2 3
+
+4 x File Copy 256 bufsize 500 maxblocks  1 2 3
+
+4 x File Copy 4096 bufsize 8000 maxblocks  1 2 3
+
+4 x Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+4 x Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+4 x Process Creation  1 2 3
+
+4 x System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+4 x Shell Scripts (1 concurrent)  1 2 3
+
+4 x Shell Scripts (8 concurrent)  1 2 3
+
+========================================================================
+   BYTE UNIX Benchmarks (Version 5.1.3)
+
+   System: raspberrypi: GNU/Linux
+   OS: GNU/Linux -- 5.10.17-v7+ -- #1414 SMP Fri Apr 30 13:18:35 BST 2021
+   Machine: armv7l (unknown)
+   Language: en_US.utf8 (charmap="ANSI_X3.4-1968", collate="ANSI_X3.4-1968")
+   CPU 0: ARMv7 Processor rev 4 (v7l) (0.0 bogomips)
+
+   CPU 1: ARMv7 Processor rev 4 (v7l) (0.0 bogomips)
+
+   CPU 2: ARMv7 Processor rev 4 (v7l) (0.0 bogomips)
+
+   CPU 3: ARMv7 Processor rev 4 (v7l) (0.0 bogomips)
+
+   16:07:47 up  1:04,  1 user,  load average: 0.30, 0.07, 0.20; runlevel Oct
+
+------------------------------------------------------------------------
+Benchmark Run: Tue Nov 02 2021 16:07:47 - 16:35:49
+4 CPUs in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables        3717959.9 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     1027.3 MWIPS (9.9 s, 7 samples)
+Execl Throughput                                666.6 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks         95630.2 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks           26781.9 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks        269559.5 KBps  (30.0 s, 2 samples)
+Pipe Throughput                              140813.3 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                  26368.0 lps   (10.0 s, 7 samples)
+Process Creation                               1381.5 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   1659.3 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                    467.3 lpm   (60.1 s, 2 samples)
+System Call Overhead                         488229.9 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0    3717959.9    318.6
+Double-Precision Whetstone                       55.0       1027.3    186.8
+Execl Throughput                                 43.0        666.6    155.0
+File Copy 1024 bufsize 2000 maxblocks          3960.0      95630.2    241.5
+File Copy 256 bufsize 500 maxblocks            1655.0      26781.9    161.8
+File Copy 4096 bufsize 8000 maxblocks          5800.0     269559.5    464.8
+Pipe Throughput                               12440.0     140813.3    113.2
+Pipe-based Context Switching                   4000.0      26368.0     65.9
+Process Creation                                126.0       1381.5    109.6
+Shell Scripts (1 concurrent)                     42.4       1659.3    391.3
+Shell Scripts (8 concurrent)                      6.0        467.3    778.9
+System Call Overhead                          15000.0     488229.9    325.5
+                                                                   ========
+System Benchmarks Index Score                                         221.0
+
+------------------------------------------------------------------------
+Benchmark Run: Tue Nov 02 2021 16:35:49 - 17:03:55
+4 CPUs in system; running 4 parallel copies of tests
+
+Dhrystone 2 using register variables       14862045.8 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     4108.6 MWIPS (9.9 s, 7 samples)
+Execl Throughput                               1748.6 lps   (29.9 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        160903.5 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks           43096.4 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks        458352.7 KBps  (30.0 s, 2 samples)
+Pipe Throughput                              564542.1 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 103145.9 lps   (10.0 s, 7 samples)
+Process Creation                               3749.5 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   3764.8 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                    495.6 lpm   (60.4 s, 2 samples)
+System Call Overhead                        1882514.7 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   14862045.8   1273.5
+Double-Precision Whetstone                       55.0       4108.6    747.0
+Execl Throughput                                 43.0       1748.6    406.7
+File Copy 1024 bufsize 2000 maxblocks          3960.0     160903.5    406.3
+File Copy 256 bufsize 500 maxblocks            1655.0      43096.4    260.4
+File Copy 4096 bufsize 8000 maxblocks          5800.0     458352.7    790.3
+Pipe Throughput                               12440.0     564542.1    453.8
+Pipe-based Context Switching                   4000.0     103145.9    257.9
+Process Creation                                126.0       3749.5    297.6
+Shell Scripts (1 concurrent)                     42.4       3764.8    887.9
+Shell Scripts (8 concurrent)                      6.0        495.6    826.0
+System Call Overhead                          15000.0    1882514.7   1255.0
+                                                                   ========
+System Benchmarks Index Score                                         564.0
