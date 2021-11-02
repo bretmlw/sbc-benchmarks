@@ -1,0 +1,189 @@
+System Information
+System Information
+Operating System	Linux 5.10.63-v7+ armv7l
+Model	N/A
+Motherboard	N/A
+CPU Information
+Name	ARM BCM2835
+Topology	1 Processor, 1 Core, 4 Threads
+Base Frequency	1.00 GHz
+Memory Information
+Memory	475 MB
+Single-Core Performance
+Single-Core Score	75	
+Crypto Score	7	
+Integer Score	86	
+Floating Point Score	64	
+AES-XTS
+7
+11.8 MB/sec	
+ 
+Text Compression
+132
+681.5 KB/sec	
+ 
+Image Compression
+74
+3.52 Mpixels/sec	
+ 
+Navigation
+158
+446.8 KTE/sec	
+ 
+HTML5
+78
+92.1 KElements/sec	
+ 
+SQLite
+74
+23.1 Krows/sec	
+ 
+PDF Rendering
+87
+4.74 Mpixels/sec	
+ 
+Text Rendering
+81
+25.9 KB/sec	
+ 
+Clang
+99
+772.8 lines/sec	
+ 
+Camera
+43
+0.49 images/sec	
+ 
+N-Body Physics
+57
+71.2 Kpairs/sec	
+ 
+Rigid Body Physics
+115
+713.3 FPS	
+ 
+Gaussian Blur
+21
+1.17 Mpixels/sec	
+ 
+Face Detection
+87
+0.67 images/sec	
+ 
+Horizon Detection
+84
+2.08 Mpixels/sec	
+ 
+Image Inpainting
+95
+4.67 Mpixels/sec	
+ 
+HDR
+127
+1.73 Mpixels/sec	
+ 
+Ray Tracing
+90
+71.9 Kpixels/sec	
+ 
+Structure from Motion
+42
+377.9 pixels/sec	
+ 
+Speech Recognition
+83
+2.66 Words/sec	
+ 
+Machine Learning
+18
+0.69 images/sec	
+ 
+Multi-Core Performance
+Multi-Core Score	144	
+Crypto Score	13	
+Integer Score	162	
+Floating Point Score	126	
+AES-XTS
+13
+23.4 MB/sec	
+ 
+Text Compression
+249
+1.26 MB/sec	
+ 
+Image Compression
+148
+6.99 Mpixels/sec	
+ 
+Navigation
+260
+732.0 KTE/sec	
+ 
+HTML5
+145
+170.2 KElements/sec	
+ 
+SQLite
+145
+45.3 Krows/sec	
+ 
+PDF Rendering
+164
+8.92 Mpixels/sec	
+ 
+Text Rendering
+151
+48.0 KB/sec	
+ 
+Clang
+190
+1.48 Klines/sec	
+ 
+Camera
+80
+0.93 images/sec	
+ 
+N-Body Physics
+110
+137.8 Kpairs/sec	
+ 
+Rigid Body Physics
+228
+1412.6 FPS	
+ 
+Gaussian Blur
+55
+3.00 Mpixels/sec	
+ 
+Face Detection
+172
+1.33 images/sec	
+ 
+Horizon Detection
+159
+3.91 Mpixels/sec	
+ 
+Image Inpainting
+171
+8.41 Mpixels/sec	
+ 
+HDR
+252
+3.43 Mpixels/sec	
+ 
+Ray Tracing
+187
+150.0 Kpixels/sec	
+ 
+Structure from Motion
+83
+741.2 pixels/sec	
+ 
+Speech Recognition
+149
+4.75 Words/sec	
+ 
+Machine Learning
+33
+1.27 images/sec	
+ 
