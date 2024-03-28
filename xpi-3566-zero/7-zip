@@ -1,0 +1,97 @@
+##########################################################################
+
+Executing benchmark single-threaded on cpu0 (Cortex-A55)
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=C,Utf16=off,HugeFiles=on,64 bits,4 CPUs LE)
+
+LE
+CPU Freq: 64000000 64000000 32000000 64000000 - - - - -
+
+RAM size:    1959 MB,  # CPU hardware threads:   4
+RAM usage:    435 MB,  # Benchmark threads:      1
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:        922   100    899    898  |      20597   100   1760   1759
+23:        865   100    883    882  |      20297   100   1759   1757
+24:        819   100    882    881  |      19811   100   1741   1739
+25:        764   100    873    873  |      19178   100   1709   1707
+----------------------------------  | ------------------------------
+Avr:             100    884    883  |              100   1742   1740
+Tot:             100   1313   1312
+
+##########################################################################
+
+Executing benchmark 3 times multi-threaded on CPUs 0-3
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=C,Utf16=off,HugeFiles=on,64 bits,4 CPUs LE)
+
+LE
+CPU Freq: - 64000000 64000000 - - - - - -
+
+RAM size:    1959 MB,  # CPU hardware threads:   4
+RAM usage:    882 MB,  # Benchmark threads:      4
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       2751   356    751   2676  |      77243   394   1672   6590
+23:       2683   371    737   2734  |      74716   393   1645   6465
+24:       2564   376    733   2758  |      72953   394   1625   6404
+25:       2465   381    738   2815  |      71045   396   1598   6323
+----------------------------------  | ------------------------------
+Avr:             371    740   2746  |              394   1635   6446
+Tot:             383   1187   4596
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=C,Utf16=off,HugeFiles=on,64 bits,4 CPUs LE)
+
+LE
+CPU Freq: - - - - - - - - -
+
+RAM size:    1959 MB,  # CPU hardware threads:   4
+RAM usage:    882 MB,  # Benchmark threads:      4
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       2804   363    752   2728  |      76853   394   1665   6557
+23:       2599   365    726   2648  |      74588   393   1640   6454
+24:       2502   370    727   2691  |      72864   394   1625   6396
+25:       2470   385    734   2821  |      70407   392   1597   6266
+----------------------------------  | ------------------------------
+Avr:             371    734   2722  |              393   1632   6418
+Tot:             382   1183   4570
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=C,Utf16=off,HugeFiles=on,64 bits,4 CPUs LE)
+
+LE
+CPU Freq: - 64000000 64000000 - - - - - -
+
+RAM size:    1959 MB,  # CPU hardware threads:   4
+RAM usage:    882 MB,  # Benchmark threads:      4
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       2780   360    751   2705  |      77843   398   1670   6641
+23:       2602   363    730   2652  |      75818   398   1649   6560
+24:       2545   375    731   2737  |      73835   398   1629   6482
+25:       2463   383    734   2813  |      71510   398   1601   6364
+----------------------------------  | ------------------------------
+Avr:             370    736   2727  |              398   1637   6512
+Tot:             384   1187   4619
+
+Compression: 2746,2722,2727
+Decompression: 6446,6418,6512
+Total: 4596,4570,4619
+
+##########################################################################
