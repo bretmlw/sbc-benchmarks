@@ -1,0 +1,27 @@
+                   PassMark PerformanceTest Linux (11.0.1002)
+
+Rockchip RK3566 EVB2 LP4X V10 Board
+Cortex-A55 (aarch64)
+4 cores @ 1800 MHz  |  1.9 GiB RAM
+Number of Processes: 4  |  Test Iterations: 1  |  Test Duration: Medium
+--------------------------------------------------------------------------------
+CPU Mark:                          664
+  Integer Math                     11970 Million Operations/s
+  Floating Point Math              2207 Million Operations/s
+  Prime Numbers                    2.8 Million Primes/s
+  Sorting                          3403 Thousand Strings/s
+  Encryption                       179 MB/s
+  Compression                      5139 KB/s
+  CPU Single Threaded              303 Million Operations/s
+  Physics                          61.6 Frames/s
+  Extended Instructions (NEON)     283 Million Matrices/s
+
+Memory Mark:                       585
+  Database Operations              514 Thousand Operations/s
+  Memory Read Cached               4326 MB/s
+  Memory Read Uncached             4050 MB/s
+  Memory Write                     4314 MB/s
+  Available RAM                    1560 Megabytes
+  Memory Latency                   155 Nanoseconds
+  Memory Threaded                  6036 MB/s
+--------------------------------------------------------------------------------
