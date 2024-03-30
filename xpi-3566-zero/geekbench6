@@ -1,0 +1,21 @@
+SWAP was enabled to allow this test to actually finish, it was 512MB partition run on the eMMC
+
+| Test                 | Single-Core      | Multi-Core       |
+|----------------------|------------------|------------------|
+| Overall Score        | 212              | 547              |
+| File Compression     | 236 (33.9 MB/sec)| 349 (50.1 MB/sec)|
+| Navigation           | 335 (2.02 routes/sec) | 714 (4.30 routes/sec)|
+| HTML5 Browser        | 233 (4.76 pages/sec) | 622 (12.7 pages/sec)|
+| PDF Renderer         | 290 (6.68 Mpixels/sec) | 1055 (24.3 Mpixels/sec)|
+| Photo Library        | 196 (2.66 images/sec) | 629 (8.54 images/sec)|
+| Clang                | 229 (1.13 Klines/sec) | 626 (3.08 Klines/sec)|
+| Text Processing      | 213 (17.1 pages/sec) | 253 (20.2 pages/sec)|
+| Asset Compression    | 273 (8.46 MB/sec) | 1018 (31.5 MB/sec)|
+| Object Detection     | 133 (3.99 images/sec) | 360 (10.8 images/sec)|
+| Background Blur      | 120 (0.49 images/sec) | 233 (0.96 images/sec)|
+| Horizon Detection    | 287 (8.93 Mpixels/sec) | 825 (25.7 Mpixels/sec)|
+| Object Remover       | 81 (6.20 Mpixels/sec) | 264 (20.3 Mpixels/sec)|
+| HDR                  | 199 (5.85 Mpixels/sec) | 632 (18.5 Mpixels/sec)|
+| Photo Filter         | 255 (2.53 images/sec) | 463 (4.59 images/sec)|
+| Ray Tracer           | 269 (260.3 Kpixels/sec) | 1058 (1.02 Mpixels/sec)|
+| Structure from Motion| 167 (5.30 Kpixels/sec) | 593 (18.8 Kpixels/sec)|
