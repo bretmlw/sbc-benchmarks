@@ -1,0 +1,25 @@
+Radxa Zero
+Cortex-A53 (aarch64)
+4 cores @ 1800 MHz  |  3.7 GiB RAM
+Number of Processes: 4  |  Test Iterations: 3  |  Test Duration: Medium
+--------------------------------------------------------------------------------
+CPU Mark:                          597
+  Integer Math                     11940 Million Operations/s
+  Floating Point Math              1681 Million Operations/s
+  Prime Numbers                    3.0 Million Primes/s
+  Sorting                          3187 Thousand Strings/s
+  Encryption                       174 MB/s
+  Compression                      4533 KB/s
+  CPU Single Threaded              257 Million Operations/s
+  Physics                          60.1 Frames/s
+  Extended Instructions (NEON)     235 Million Matrices/s
+  
+Memory Mark:                       494
+  Database Operations              551 Thousand Operations/s
+  Memory Read Cached               3414 MB/s
+  Memory Read Uncached             2017 MB/s
+  Memory Write                     4567 MB/s
+  Available RAM                    2098 Megabytes
+  Memory Latency                   158 Nanoseconds
+  Memory Threaded                  4772 MB/s
+--------------------------------------------------------------------------------
