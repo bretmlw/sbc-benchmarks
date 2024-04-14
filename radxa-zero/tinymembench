@@ -1,0 +1,154 @@
+##########################################################################
+
+Executing benchmark on cpu0 (Cortex-A53):
+
+tinymembench v0.4.9-nuumio (simple benchmark for memory throughput and latency)
+
+CFLAGS: 
+bandwidth test min repeats (-b): 2
+bandwidth test max repeats (-B): 3
+bandwidth test mem realloc (-M): no      (-m for realloc)
+      latency test repeats (-l): 3
+        latency test count (-c): 1000000
+
+==========================================================================
+== Memory bandwidth tests                                               ==
+==                                                                      ==
+== Note 1: 1MB = 1000000 bytes                                          ==
+== Note 2: Test result is the best of repeated runs. Number of repeats  ==
+==         is shown in brackets                                         ==
+== Note 3: Results for 'copy' tests show how many bytes can be          ==
+==         copied per second (adding together read and writen           ==
+==         bytes would have provided twice higher numbers)              ==
+== Note 4: 2-pass copy means that we are using a small temporary buffer ==
+==         to first fetch data into it, and only then write it to the   ==
+==         destination (source -> L1 cache, L1 cache -> destination)    ==
+== Note 5: If sample standard deviation exceeds 0.1%, it is shown in    ==
+==         brackets                                                     ==
+==========================================================================
+
+ C copy backwards                                 :   1559.3 MB/s (3, 5.8%)
+ C copy backwards (32 byte blocks)                :   1587.8 MB/s (3, 0.8%)
+ C copy backwards (64 byte blocks)                :   1612.9 MB/s (3, 1.5%)
+ C copy                                           :   1568.2 MB/s (3, 1.4%)
+ C copy prefetched (32 bytes step)                :   1272.3 MB/s (2)
+ C copy prefetched (64 bytes step)                :   1471.3 MB/s (3, 1.0%)
+ C 2-pass copy                                    :   1512.3 MB/s (2)
+ C 2-pass copy prefetched (32 bytes step)         :   1135.0 MB/s (2)
+ C 2-pass copy prefetched (64 bytes step)         :    929.6 MB/s (2)
+ C scan 8                                         :    350.6 MB/s (3, 0.2%)
+ C scan 16                                        :    685.8 MB/s (2)
+ C scan 32                                        :   1271.9 MB/s (3, 0.6%)
+ C scan 64                                        :   2079.7 MB/s (2)
+ C fill                                           :   5358.3 MB/s (2)
+ C fill (shuffle within 16 byte blocks)           :   5360.8 MB/s (2)
+ C fill (shuffle within 32 byte blocks)           :   5356.6 MB/s (2)
+ C fill (shuffle within 64 byte blocks)           :   5353.7 MB/s (2)
+ ---
+ libc memcpy copy                                 :   1607.9 MB/s (3, 0.7%)
+ libc memchr scan                                 :   1977.7 MB/s (3, 4.1%)
+ libc memset fill                                 :   5363.2 MB/s (3, 0.1%)
+ ---
+ NEON LDP/STP copy                                :   1614.9 MB/s (2)
+ NEON LDP/STP copy pldl2strm (32 bytes step)      :   1141.7 MB/s (2)
+ NEON LDP/STP copy pldl2strm (64 bytes step)      :   1450.3 MB/s (3, 0.4%)
+ NEON LDP/STP copy pldl1keep (32 bytes step)      :   1905.1 MB/s (2)
+ NEON LDP/STP copy pldl1keep (64 bytes step)      :   1904.2 MB/s (2)
+ NEON LD1/ST1 copy                                :   1599.5 MB/s (3, 0.7%)
+ NEON LDP load                                    :   2755.0 MB/s (2)
+ NEON LDNP load                                   :   2047.6 MB/s (3, 0.4%)
+ NEON STP fill                                    :   5361.3 MB/s (3, 1.5%)
+ NEON STNP fill                                   :   5197.9 MB/s (2)
+ ARM LDP/STP copy                                 :   1614.9 MB/s (3, 0.1%)
+ ARM LDP load                                     :   2754.5 MB/s (2)
+ ARM LDNP load                                    :   2053.0 MB/s (3, 0.5%)
+ ARM STP fill                                     :   5361.1 MB/s (2)
+ ARM STNP fill                                    :   5209.0 MB/s (3, 6.7%)
+
+==========================================================================
+== Framebuffer read tests.                                              ==
+==                                                                      ==
+== Many ARM devices use a part of the system memory as the framebuffer, ==
+== typically mapped as uncached but with write-combining enabled.       ==
+== Writes to such framebuffers are quite fast, but reads are much       ==
+== slower and very sensitive to the alignment and the selection of      ==
+== CPU instructions which are used for accessing memory.                ==
+==                                                                      ==
+== Many x86 systems allocate the framebuffer in the GPU memory,         ==
+== accessible for the CPU via a relatively slow PCI-E bus. Moreover,    ==
+== PCI-E is asymmetric and handles reads a lot worse than writes.       ==
+==                                                                      ==
+== If uncached framebuffer reads are reasonably fast (at least 100 MB/s ==
+== or preferably >300 MB/s), then using the shadow framebuffer layer    ==
+== is not necessary in Xorg DDX drivers, resulting in a nice overall    ==
+== performance improvement. For example, the xf86-video-fbturbo DDX     ==
+== uses this trick.                                                     ==
+==========================================================================
+
+ NEON LDP/STP copy (from framebuffer)             :    210.8 MB/s (3, 0.1%)
+ NEON LDP/STP 2-pass copy (from framebuffer)      :    216.4 MB/s (2)
+ NEON LD1/ST1 copy (from framebuffer)             :     57.5 MB/s (2)
+ NEON LD1/ST1 2-pass copy (from framebuffer)      :     57.5 MB/s (3, 0.4%)
+ ARM LDP/STP copy (from framebuffer)              :    111.1 MB/s (2)
+ ARM LDP/STP 2-pass copy (from framebuffer)       :    112.9 MB/s (2)
+
+==========================================================================
+== Memory latency test                                                  ==
+==                                                                      ==
+== Average time is measured for random memory accesses in the buffers   ==
+== of different sizes. The larger is the buffer, the more significant   ==
+== are relative contributions of TLB, L1/L2 cache misses and SDRAM      ==
+== accesses. For extremely large buffer sizes we are expecting to see   ==
+== page table walk with several requests to SDRAM for almost every      ==
+== memory access (though 64MiB is not nearly large enough to experience ==
+== this effect to its fullest).                                         ==
+==                                                                      ==
+== Note 1: All the numbers are representing extra time, which needs to  ==
+==         be added to L1 cache latency. The cycle timings for L1 cache ==
+==         latency can be usually found in the processor documentation. ==
+== Note 2: Dual random read means that we are simultaneously performing ==
+==         two independent memory accesses at a time. In the case if    ==
+==         the memory subsystem can't handle multiple outstanding       ==
+==         requests, dual random read has the same timings as two       ==
+==         single reads performed one after another.                    ==
+==========================================================================
+
+block size : single random read / dual random read, [MADV_NOHUGEPAGE]
+      1024 :    0.0 ns          /     0.0 ns 
+      2048 :    0.0 ns          /     0.0 ns 
+      4096 :    0.0 ns          /     0.0 ns 
+      8192 :    0.0 ns          /     0.0 ns 
+     16384 :    0.0 ns          /     0.0 ns 
+     32768 :    0.1 ns          /     0.0 ns 
+     65536 :    3.9 ns          /     6.4 ns 
+    131072 :    6.1 ns          /     9.0 ns 
+    262144 :    7.6 ns          /    10.1 ns 
+    524288 :   16.0 ns          /    24.6 ns 
+   1048576 :   85.0 ns          /   130.0 ns 
+   2097152 :  125.0 ns          /   167.5 ns 
+   4194304 :  149.1 ns          /   184.0 ns 
+   8388608 :  163.2 ns          /   194.0 ns 
+  16777216 :  170.5 ns          /   197.2 ns 
+  33554432 :  174.1 ns          /   201.4 ns 
+  67108864 :  176.4 ns          /   204.2 ns 
+
+block size : single random read / dual random read, [MADV_HUGEPAGE]
+      1024 :    0.0 ns          /     0.0 ns 
+      2048 :    0.0 ns          /     0.0 ns 
+      4096 :    0.0 ns          /     0.0 ns 
+      8192 :    0.0 ns          /     0.0 ns 
+     16384 :    0.0 ns          /     0.0 ns 
+     32768 :    0.1 ns          /     0.0 ns 
+     65536 :    3.9 ns          /     6.4 ns 
+    131072 :    6.1 ns          /     9.0 ns 
+    262144 :    7.6 ns          /    10.0 ns 
+    524288 :    9.9 ns          /    12.1 ns 
+   1048576 :   84.7 ns          /   130.0 ns 
+   2097152 :  124.4 ns          /   167.8 ns 
+   4194304 :  143.9 ns          /   177.3 ns 
+   8388608 :  153.7 ns          /   181.6 ns 
+  16777216 :  158.6 ns          /   183.6 ns 
+  33554432 :  162.5 ns          /   188.1 ns 
+  67108864 :  163.2 ns          /   187.0 ns 
+
+##########################################################################
