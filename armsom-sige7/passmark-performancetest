@@ -1,0 +1,27 @@
+                   PassMark PerformanceTest Linux (11.0.1002)
+
+ArmSom RK3588 sige7 Board
+Cortex-A76 (aarch64)
+4 cores @ 1800 MHz  |  7.8 GiB RAM
+Number of Processes: 8  |  Test Iterations: 3  |  Test Duration: Medium
+--------------------------------------------------------------------------------
+CPU Mark:                          3258
+  Integer Math                     26848 Million Operations/s
+  Floating Point Math              13498 Million Operations/s
+  Prime Numbers                    18.9 Million Primes/s
+  Sorting                          14521 Thousand Strings/s
+  Encryption                       696 MB/s
+  Compression                      24079 KB/s
+  CPU Single Threaded              1000 Million Operations/s
+  Physics                          400 Frames/s
+  Extended Instructions (NEON)     2584 Million Matrices/s
+
+Memory Mark:                       1183
+  Database Operations              2411 Thousand Operations/s
+  Memory Read Cached               8769 MB/s
+  Memory Read Uncached             8659 MB/s
+  Memory Write                     11395 MB/s
+  Available RAM                    6864 Megabytes
+  Memory Latency                   129 Nanoseconds
+  Memory Threaded                  25517 MB/s
+--------------------------------------------------------------------------------
