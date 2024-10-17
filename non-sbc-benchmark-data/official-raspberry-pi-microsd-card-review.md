@@ -132,3 +132,512 @@
 | Write      | 11.55 MB/s (2889) | 15.80 MB/s (1976) | 25.46 MB/s (397)  | 58.47 MB/s (114) | 72.51 MB/s (70) | 75.64 MB/s (4) |
 | Randread   | 23.02 MB/s (5757) | 30.56 MB/s (3820) | 58.23 MB/s (909)  | 83.90 MB/s (163) | 89.55 MB/s (87) | 90.77 MB/s (5) |
 | Randwrite  | 16.74 MB/s (4186) | 28.59 MB/s (3573) | 58.16 MB/s (908)  | 77.89 MB/s (152) | 80.92 MB/s (79) | 75.89 MB/s (4) |
+
+
+#[Amazon Basics 64GB CQ ON]
+Run 1
+prepare-file;0;0;65161;127
+seq-write;0;0;73822;18
+seq-read;40367;9;0;0
+rand-4k-write;0;0;5748;1437
+rand-4k-read;16251;4062;0;0
+Sequential write speed 73822 KB/sec (target 10000) - PASS
+Random write speed 1437 IOPS (target 500) - PASS
+Random read speed 4062 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;65667;128
+seq-write;0;0;75134;18
+seq-read;91148;22;0;0
+rand-4k-write;0;0;5922;1480
+rand-4k-read;14238;3559;0;0
+Sequential write speed 75134 KB/sec (target 10000) - PASS
+Random write speed 1480 IOPS (target 500) - PASS
+Random read speed 3559 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;66416;129
+seq-write;0;0;74706;18
+seq-read;90927;22;0;0
+rand-4k-write;0;0;5936;1484
+rand-4k-read;14907;3726;0;0
+Sequential write speed 74706 KB/sec (target 10000) - PASS
+Random write speed 1484 IOPS (target 500) - PASS
+Random read speed 3726 IOPS (target 1500) - PASS
+
+
+#[Amazon Basics 64GB CQ OFF]
+Run 1
+prepare-file;0;0;65585;128
+seq-write;0;0;74557;18
+seq-read;92239;22;0;0
+rand-4k-write;0;0;5833;1458
+rand-4k-read;16589;4147;0;0
+Sequential write speed 74557 KB/sec (target 10000) - PASS
+Random write speed 1458 IOPS (target 500) - PASS
+Random read speed 4147 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;65782;128
+seq-write;0;0;74219;18
+seq-read;92467;22;0;0
+rand-4k-write;0;0;5874;1468
+rand-4k-read;15479;3869;0;0
+Sequential write speed 74219 KB/sec (target 10000) - PASS
+Random write speed 1468 IOPS (target 500) - PASS
+Random read speed 3869 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;65519;127
+seq-write;0;0;74941;18
+seq-read;92401;22;0;0
+rand-4k-write;0;0;5881;1470
+rand-4k-read;14422;3605;0;0
+Sequential write speed 74941 KB/sec (target 10000) - PASS
+Random write speed 1470 IOPS (target 500) - PASS
+Random read speed 3605 IOPS (target 1500) - PASS
+
+#[Amazon Basics 128GB CQ ON]
+Run 1
+prepare-file;0;0;56716;110
+seq-write;0;0;64503;15
+seq-read;92695;22;0;0
+rand-4k-write;0;0;4213;1053
+rand-4k-read;13081;3270;0;0
+Sequential write speed 64503 KB/sec (target 10000) - PASS
+Random write speed 1053 IOPS (target 500) - PASS
+Random read speed 3270 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;56073;109
+seq-write;0;0;64838;15
+seq-read;92467;22;0;0
+rand-4k-write;0;0;4255;1063
+rand-4k-read;14891;3722;0;0
+Sequential write speed 64838 KB/sec (target 10000) - PASS
+Random write speed 1063 IOPS (target 500) - PASS
+Random read speed 3722 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;55107;107
+seq-write;0;0;66231;16
+seq-read;92695;22;0;0
+rand-4k-write;0;0;4209;1052
+rand-4k-read;14996;3749;0;0
+Sequential write speed 66231 KB/sec (target 10000) - PASS
+Random write speed 1052 IOPS (target 500) - PASS
+Random read speed 3749 IOPS (target 1500) - PASS
+
+#[Amazon Basics 128GB CQ OFF]
+Run 1
+prepare-file;0;0;56278;109
+seq-write;0;0;64015;15
+seq-read;92695;22;0;0
+rand-4k-write;0;0;4514;1128
+rand-4k-read;12947;3236;0;0
+Sequential write speed 64015 KB/sec (target 10000) - PASS
+Random write speed 1128 IOPS (target 500) - PASS
+Random read speed 3236 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;56181;109
+seq-write;0;0;65437;15
+seq-read;92434;22;0;0
+rand-4k-write;0;0;4310;1077
+rand-4k-read;13703;3425;0;0
+Sequential write speed 65437 KB/sec (target 10000) - PASS
+Random write speed 1077 IOPS (target 500) - PASS
+Random read speed 3425 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;54431;106
+seq-write;0;0;64838;15
+seq-read;92695;22;0;0
+rand-4k-write;0;0;4295;1073
+rand-4k-read;14225;3556;0;0
+Sequential write speed 64838 KB/sec (target 10000) - PASS
+Random write speed 1073 IOPS (target 500) - PASS
+Random read speed 3556 IOPS (target 1500) - PASS
+
+#[Sandisk Extreme 64GB CQ ON]
+Run 1
+prepare-file;0;0;63212;123
+seq-write;0;0;61855;15
+seq-read;91980;22;0;0
+rand-4k-write;0;0;12266;3066
+rand-4k-read;24835;6208;0;0
+Sequential write speed 61855 KB/sec (target 10000) - PASS
+Random write speed 3066 IOPS (target 500) - PASS
+Random read speed 6208 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;64758;126
+seq-write;0;0;63953;15
+seq-read;92174;22;0;0
+rand-4k-write;0;0;11980;2995
+rand-4k-read;24775;6193;0;0
+Sequential write speed 63953 KB/sec (target 10000) - PASS
+Random write speed 2995 IOPS (target 500) - PASS
+Random read speed 6193 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;64551;126
+seq-write;0;0;62519;15
+seq-read;92044;22;0;0
+rand-4k-write;0;0;11967;2991
+rand-4k-read;24530;6132;0;0
+Sequential write speed 62519 KB/sec (target 10000) - PASS
+Random write speed 2991 IOPS (target 500) - PASS
+Random read speed 6132 IOPS (target 1500) - PASS
+
+#[Sandisk Extreme 64GB CQ OFF]
+Run 1
+prepare-file;0;0;60555;118
+seq-write;0;0;61521;15
+seq-read;92467;22;0;0
+rand-4k-write;0;0;4563;1140
+rand-4k-read;10149;2537;0;0
+Sequential write speed 61521 KB/sec (target 10000) - PASS
+Random write speed 1140 IOPS (target 500) - PASS
+Random read speed 2537 IOPS (target 1500) - PASS
+
+Run 2
+seq-write;0;0;64935;15
+seq-read;92467;22;0;0
+rand-4k-write;0;0;4625;1156
+rand-4k-read;10054;2513;0;0
+Sequential write speed 64935 KB/sec (target 10000) - PASS
+Random write speed 1156 IOPS (target 500) - PASS
+Random read speed 2513 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;55072;107
+seq-write;0;0;61797;15
+seq-read;92467;22;0;0
+rand-4k-write;0;0;4581;1145
+rand-4k-read;10282;2570;0;0
+Sequential write speed 61797 KB/sec (target 10000) - PASS
+Random write speed 1145 IOPS (target 500) - PASS
+Random read speed 2570 IOPS (target 1500) - PASS
+
+#[Sandisk Extreme PRO 128GB CQ ON]
+
+Run 1
+prepare-file;0;0;71351;139
+seq-write;0;0;72255;17
+seq-read;92012;22;0;0
+rand-4k-write;0;0;11672;2918
+rand-4k-read;21999;5499;0;0
+Sequential write speed 72255 KB/sec (target 10000) - PASS
+Random write speed 2918 IOPS (target 500) - PASS
+Random read speed 5499 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;74621;145
+seq-write;0;0;74621;18
+seq-read;91562;22;0;0
+rand-4k-write;0;0;11827;2956
+rand-4k-read;22344;5586;0;0
+Sequential write speed 74621 KB/sec (target 10000) - PASS
+Random write speed 2956 IOPS (target 500) - PASS
+Random read speed 5586 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;72858;142
+seq-write;0;0;73718;17
+seq-read;92044;22;0;0
+rand-4k-write;0;0;11670;2917
+rand-4k-read;21644;5411;0;0
+Sequential write speed 73718 KB/sec (target 10000) - PASS
+Random write speed 2917 IOPS (target 500) - PASS
+Random read speed 5411 IOPS (target 1500) - PASS
+
+#[Sandisk Extreme PRO 128GB CQ OFF]
+Run 1
+prepare-file;0;0;69663;136
+seq-write;0;0;76852;18
+seq-read;92271;22;0;0
+rand-4k-write;0;0;4210;1052
+rand-4k-read;9505;2376;0;0
+Sequential write speed 76852 KB/sec (target 10000) - PASS
+Random write speed 1052 IOPS (target 500) - PASS
+Random read speed 2376 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;69534;135
+seq-write;0;0;77305;18
+seq-read;90581;22;0;0
+rand-4k-write;0;0;4267;1066
+rand-4k-read;9464;2366;0;0
+Sequential write speed 77305 KB/sec (target 10000) - PASS
+Random write speed 1066 IOPS (target 500) - PASS
+Random read speed 2366 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;75961;148
+seq-write;0;0;76049;18
+seq-read;92336;22;0;0
+rand-4k-write;0;0;4206;1051
+rand-4k-read;9514;2378;0;0
+Sequential write speed 76049 KB/sec (target 10000) - PASS
+Random write speed 1051 IOPS (target 500) - PASS
+Random read speed 2378 IOPS (target 1500) - PASS
+
+#[Samsung PRO Plus 128GB CQ ON]
+Run 1
+prepare-file;0;0;53586;104
+seq-write;0;0;64567;15
+seq-read;91562;22;0;0
+rand-4k-write;0;0;3062;765
+rand-4k-read;16885;4221;0;0
+Sequential write speed 64567 KB/sec (target 10000) - PASS
+Random write speed 765 IOPS (target 500) - PASS
+Random read speed 4221 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;23293;45
+seq-write;0;0;24131;5
+seq-read;91498;22;0;0
+rand-4k-write;0;0;3085;771
+rand-4k-read;17305;4326;0;0
+Sequential write speed 24131 KB/sec (target 10000) - PASS
+Random write speed 771 IOPS (target 500) - PASS
+Random read speed 4326 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;53378;104
+seq-write;0;0;67147;16
+seq-read;91787;22;0;0
+rand-4k-write;0;0;3090;772
+rand-4k-read;16789;4197;0;0
+Sequential write speed 67147 KB/sec (target 10000) - PASS
+Random write speed 772 IOPS (target 500) - PASS
+Random read speed 4197 IOPS (target 1500) - PASS
+
+#[Samsung PRO Plus 128GB CQ OFF]
+Run 1
+prepare-file;0;0;52702;102
+seq-write;0;0;63921;15
+seq-read;92892;22;0;0
+rand-4k-write;0;0;3071;767
+rand-4k-read;17038;4259;0;0
+Sequential write speed 63921 KB/sec (target 10000) - PASS
+Random write speed 767 IOPS (target 500) - PASS
+Random read speed 4259 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;52565;102
+seq-write;0;0;64361;15
+seq-read;92827;22;0;0
+rand-4k-write;0;0;3083;770
+rand-4k-read;16746;4186;0;0
+Sequential write speed 64361 KB/sec (target 10000) - PASS
+Random write speed 770 IOPS (target 500) - PASS
+Random read speed 4186 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;51572;100
+seq-write;0;0;65552;16
+seq-read;92794;22;0;0
+rand-4k-write;0;0;3077;769
+rand-4k-read;16927;4231;0;0
+Sequential write speed 65552 KB/sec (target 10000) - PASS
+Random write speed 769 IOPS (target 500) - PASS
+Random read speed 4231 IOPS (target 1500) - PASS
+
+#[Raspberry Pi 32GB CQ ON]
+Run 1
+prepare-file;0;0;32978;64
+seq-write;0;0;33170;8
+seq-read;92794;22;0;0
+rand-4k-write;0;0;8415;2103
+rand-4k-read;22359;5589;0;0
+Sequential write speed 33170 KB/sec (target 10000) - PASS
+Random write speed 2103 IOPS (target 500) - PASS
+Random read speed 5589 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;32887;64
+seq-write;0;0;33220;8
+seq-read;92827;22;0;0
+rand-4k-write;0;0;8430;2107
+rand-4k-read;22393;5598;0;0
+Sequential write speed 33220 KB/sec (target 10000) - PASS
+Random write speed 2107 IOPS (target 500) - PASS
+Random read speed 5598 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;33157;64
+seq-write;0;0;32833;8
+seq-read;92860;22;0;0
+rand-4k-write;0;0;8623;2155
+rand-4k-read;21448;5362;0;0
+Sequential write speed 32833 KB/sec (target 10000) - PASS
+Random write speed 2155 IOPS (target 500) - PASS
+Random read speed 5362 IOPS (target 1500) - PASS
+
+
+#[Raspberry Pi 32GB CQ OFF]
+Run 1
+prepare-file;0;0;32279;63
+seq-write;0;0;32858;8
+seq-read;92761;22;0;0
+rand-4k-write;0;0;6244;1561
+rand-4k-read;16703;4175;0;0
+Sequential write speed 32858 KB/sec (target 10000) - PASS
+Random write speed 1561 IOPS (target 500) - PASS
+Random read speed 4175 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;32359;63
+seq-write;0;0;32974;8
+seq-read;91243;22;0;0
+rand-4k-write;0;0;6011;1502
+rand-4k-read;17690;4422;0;0
+Sequential write speed 32974 KB/sec (target 10000) - PASS
+Random write speed 1502 IOPS (target 500) - PASS
+Random read speed 4422 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;31530;61
+seq-write;0;0;32776;8
+seq-read;92827;22;0;0
+rand-4k-write;0;0;5967;1491
+rand-4k-read;17140;4285;0;0
+Sequential write speed 32776 KB/sec (target 10000) - PASS
+Random write speed 1491 IOPS (target 500) - PASS
+Random read speed 4285 IOPS (target 1500) - PASS
+
+
+
+#[Raspberry Pi 64GB CQ ON]
+Run 1
+prepare-file;0;0;72076;140
+seq-write;0;0;71080;17
+seq-read;91339;22;0;0
+rand-4k-write;0;0;15844;3961
+rand-4k-read;29755;7438;0;0
+Sequential write speed 71080 KB/sec (target 10000) - PASS
+Random write speed 3961 IOPS (target 500) - PASS
+Random read speed 7438 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;70639;137
+seq-write;0;0;71839;17
+seq-read;90707;22;0;0
+rand-4k-write;0;0;15773;3943
+rand-4k-read;29590;7397;0;0
+Sequential write speed 71839 KB/sec (target 10000) - PASS
+Random write speed 3943 IOPS (target 500) - PASS
+Random read speed 7397 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;71859;140
+seq-write;0;0;71682;17
+seq-read;90770;22;0;0
+rand-4k-write;0;0;15790;3947
+rand-4k-read;29457;7364;0;0
+Sequential write speed 71682 KB/sec (target 10000) - PASS
+Random write speed 3947 IOPS (target 500) - PASS
+Random read speed 7364 IOPS (target 1500) - PASS
+
+
+
+#[Raspberry Pi 64GB CQ OFF]
+Run 1
+prepare-file;0;0;58344;113
+seq-write;0;0;71041;17
+seq-read;89775;21;0;0
+rand-4k-write;0;0;16381;4095
+rand-4k-read;28072;7018;0;0
+Sequential write speed 71041 KB/sec (target 10000) - PASS
+Random write speed 4095 IOPS (target 500) - PASS
+Random read speed 7018 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;58829;114
+seq-write;0;0;71938;17
+seq-read;90021;21;0;0
+rand-4k-write;0;0;16397;4099
+rand-4k-read;27743;6935;0;0
+Sequential write speed 71938 KB/sec (target 10000) - PASS
+Random write speed 4099 IOPS (target 500) - PASS
+Random read speed 6935 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;59443;116
+seq-write;0;0;70129;17
+seq-read;89713;21;0;0
+rand-4k-write;0;0;16373;4093
+rand-4k-read;27875;6968;0;0
+Sequential write speed 70129 KB/sec (target 10000) - PASS
+Random write speed 4093 IOPS (target 500) - PASS
+Random read speed 6968 IOPS (target 1500) - PASS
+
+
+
+#[Raspberry Pi 128GB CQ ON]
+Run 1
+prepare-file;0;0;73081;142
+seq-write;0;0;72676;17
+seq-read;90269;22;0;0
+rand-4k-write;0;0;15993;3998
+rand-4k-read;29427;7356;0;0
+Sequential write speed 72676 KB/sec (target 10000) - PASS
+Random write speed 3998 IOPS (target 500) - PASS
+Random read speed 7356 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;72595;141
+seq-write;0;0;72858;17
+seq-read;90425;22;0;0
+rand-4k-write;0;0;15920;3980
+rand-4k-read;29358;7339;0;0
+Sequential write speed 72858 KB/sec (target 10000) - PASS
+Random write speed 3980 IOPS (target 500) - PASS
+Random read speed 7339 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;72495;141
+seq-write;0;0;72939;17
+seq-read;90394;22;0;0
+rand-4k-write;0;0;15923;3980
+rand-4k-read;29312;7328;0;0
+Sequential write speed 72939 KB/sec (target 10000) - PASS
+Random write speed 3980 IOPS (target 500) - PASS
+Random read speed 7328 IOPS (target 1500) - PASS
+
+
+
+#[Raspberry Pi 128GB CQ OFF]
+Run 1
+prepare-file;0;0;59470;116
+seq-write;0;0;72939;17
+seq-read;90488;22;0;0
+rand-4k-write;0;0;16475;4118
+rand-4k-read;27716;6929;0;0
+Sequential write speed 72939 KB/sec (target 10000) - PASS
+Random write speed 4118 IOPS (target 500) - PASS
+Random read speed 6929 IOPS (target 1500) - PASS
+
+Run 2
+prepare-file;0;0;60193;117
+seq-write;0;0;72898;17
+seq-read;90456;22;0;0
+rand-4k-write;0;0;16479;4119
+rand-4k-read;28021;7005;0;0
+Sequential write speed 72898 KB/sec (target 10000) - PASS
+Random write speed 4119 IOPS (target 500) - PASS
+Random read speed 7005 IOPS (target 1500) - PASS
+
+Run 3
+prepare-file;0;0;71761;140
+seq-write;0;0;73326;17
+seq-read;90332;22;0;0
+rand-4k-write;0;0;16472;4118
+rand-4k-read;27559;6889;0;0
+Sequential write speed 73326 KB/sec (target 10000) - PASS
+Random write speed 4118 IOPS (target 500) - PASS
+Random read speed 6889 IOPS (target 1500) - PASS
+
+
