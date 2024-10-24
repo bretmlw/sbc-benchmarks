@@ -3,6 +3,8 @@
 ## Details
 ### Device Identification:
 
+A visual and technical comparison makes it look like a Samsung P991a re-label?
+
 - Manufacturer: Samsung (Vendor ID: 0x144d)
 - Model: MZ9LQ256HBJD-00BVL
 - Firmware Version: FXM71V1Q
