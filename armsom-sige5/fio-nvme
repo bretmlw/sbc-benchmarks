@@ -1,0 +1,22 @@
+fio Disk Speed Tests (Partition /dev/nvme0n1p2):
+---------------------------------
+Block Size | 4k            (IOPS) | 8k            (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 397.81 MB/s  (99453) | 402.70 MB/s  (50338)
+Write      | 319.20 MB/s  (79802) | 391.07 MB/s  (48884)
+Randread   | 391.58 MB/s  (97896) | 396.87 MB/s  (49608)
+Randwrite  | 311.87 MB/s  (77968) | 361.56 MB/s  (45195)
+           |                      |
+Block Size | 64k           (IOPS) | 512k          (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 406.70 MB/s   (6354) | 407.44 MB/s    (795)
+Write      | 400.85 MB/s   (6263) | 400.69 MB/s    (782)
+Randread   | 405.20 MB/s   (6331) | 407.18 MB/s    (795)
+Randwrite  | 392.57 MB/s   (6133) | 400.18 MB/s    (781)
+           |                      |
+Block Size | 1m            (IOPS) | 16m           (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 407.43 MB/s    (397) | 408.09 MB/s     (24)
+Write      | 401.55 MB/s    (392) | 402.34 MB/s     (24)
+Randread   | 406.04 MB/s    (396) | 408.09 MB/s     (24)
+Randwrite  | 400.94 MB/s    (391) | 403.02 MB/s     (24)
