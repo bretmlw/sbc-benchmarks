@@ -1,0 +1,22 @@
+fio Disk Speed Tests (Partition /dev/mmcblk1p1):
+---------------------------------
+Block Size | 4k            (IOPS) | 8k            (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 83.00 MB/s   (20750) | 60.99 MB/s    (7623)
+Write      | 94.33 MB/s   (23583) | 100.96 MB/s  (12620)
+Randread   | 84.47 MB/s   (21119) | 52.94 MB/s    (6618)
+Randwrite  | 88.17 MB/s   (22043) | 94.21 MB/s   (11777)
+           |                      |
+Block Size | 64k           (IOPS) | 512k          (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 125.84 MB/s   (1966) | 265.81 MB/s    (519)
+Write      | 144.60 MB/s   (2259) | 144.43 MB/s    (282)
+Randread   | 166.34 MB/s   (2599) | 262.48 MB/s    (512)
+Randwrite  | 130.56 MB/s   (2040) | 134.43 MB/s    (262)
+           |                      |
+Block Size | 1m            (IOPS) | 16m           (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 332.02 MB/s    (324) | 337.75 MB/s     (20)
+Write      | 145.03 MB/s    (141) | 144.41 MB/s      (8)
+Randread   | 305.50 MB/s    (298) | 341.78 MB/s     (20)
+Randwrite  | 138.18 MB/s    (134) | 145.21 MB/s      (8)
