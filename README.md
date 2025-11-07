@@ -1,3 +1,8 @@
+# NOTE: This repository is no longer maintained
+As of October 2025, I have launched <a href="https://sbc.compare">sbc.compare</a> which serves as my database of benchmark data, and it's considerably more in-depth, with a lot more data and features. I'll leave this repository open as it contains older/specific data, but I'll no longer be adding new data here, as everything will go to the new website!
+
+------------------------------------------------------------------------------------------------------------
+
 # sbc-benchmarks
 A list of benchmark results for various Single Board Computers (SBC) which are used in my blog posts at https://bret.dk
 
